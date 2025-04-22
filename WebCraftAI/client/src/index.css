@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+/* Custom button styles with light blue background */
+.btn, 
+button[type="submit"],
+button.bg-primary-500,
+button.bg-primary-600,
+button.primary-button,
+.btn-primary {
+  background-color: #60a5fa !important; /* Light blue */
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover, 
+button[type="submit"]:hover,
+button.bg-primary-500:hover,
+button.bg-primary-600:hover,
+button.primary-button:hover,
+.btn-primary:hover {
+  background-color: #3b82f6 !important; /* Slightly darker blue */
+}
